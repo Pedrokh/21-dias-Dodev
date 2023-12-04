@@ -1,1 +1,1 @@
-console.log("Estou no dia 2, aprendi GIT!!!");
+console.log("Hello world!");
