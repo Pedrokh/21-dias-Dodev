@@ -1,17 +1,13 @@
+//Recebe números e mostra-os com seus índices.
+
 let numbers = [];
-let keep = true;
-let counting = 0;
+let contador = 0;
 
-while (keep) {
-  let positiveNumber = Number(prompt("Escreva um número inteiro e positivo: "));
-  numbers[counting] = positiveNumber;
+while (contador < 5) {
+  let numbersOfArray = Number(prompt("Escreva um número inteiro e positivo: "));
+  numbers[contador] = numbersOfArray;
 
-  let question = prompt("Deseja continuar? (1-sim/2-não)");
+  console.log(`Número no índice - ${contador} - ${numbers[contador]}`);
 
-  if (question !== "1" || counting === 10) {
-    keep = false;
-    counting++;
-
-    console.log(numbers[]);
-  }
+  contador++;
 }
